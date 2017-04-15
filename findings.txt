@@ -1,0 +1,13 @@
+https://github.com/sbt/sbt/blob/36eb7b1e84e798bb024b519e39311e141add87a0/main/src/main/scala/sbt/Defaults.scala#L799
+packageTask
+uses
+Package(config, s.cacheStoreFactory, s.log)
+
+https://github.com/sbt/sbt/blob/36eb7b1e84e798bb024b519e39311e141add87a0/main/src/main/scala/sbt/Defaults.scala#L789
+def packageTaskSettings
+
+https://github.com/sbt/sbt/blob/36eb7b1e84e798bb024b519e39311e141add87a0/main/src/main/scala/sbt/Defaults.scala#L730
+packageTaskSettings(packageSrc, packageSrcMappings)
+
+this used to define packageConfig:Seq[Setting[_]]
+  and probably, packageTaskSettings(packageProto, packageProtoMappings) should be added there
